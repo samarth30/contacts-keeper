@@ -14,10 +14,10 @@ const UserSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  name: {
+  date: {
     type: Date,
     default: Date.now,
   },
 });
 
-mongoose.exports = mongoose.model("user", UserSchema);
+module.exports = mongoose.model("user", UserSchema);
